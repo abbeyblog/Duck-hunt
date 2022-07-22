@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>credit</title>
+    <style type="text/css" media="all">
+      
+body{
+background-image: url(menu.jpeg);
+background-color: black;
+background-size: 100%;
+background-repeat: no-repeat;
+ position: flex;
+ animation: example 5s infinite;
+ animation-name:example;
+ animation-duration: 10s
+}
+
+@keyframes example {
+ 0%{background-image: url(menu.jpeg);}
+  50%{background-image: url(menu2.jpeg);}
+    100%{background-image:url(menu3.jpeg);}
+}
+      
+#scroll-container {
+  height: 100%;
+}
+
+#scroll-text {
+  height: 600px;
+  text-align: center;
+  color: white;
+  
+  /* animation properties */
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -webkit-animation: my-animation 2s linear infinite;
+  animation: my-animation 30s linear infinite;
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+  p{
+    margin-bottom: 100px;
+  }    
+  a{
+    font-size: 30px;
+    text-decoration: none;
+  }    
+    </style>
+  </head>
+  <body>
+    <a href="game.html">⏩</a>
+    <div id="scroll-container">
+      <div id="scroll-text">
+        <h2>In the Land of Arthuris...</h2>
+        <p>Habeeb Dolapo returns home after five years in the supernatural realm in search of power. He got what he went for, however, he is not the same person he was five years ago... He has been mysteriously transformed into a dog</p>
+        <p>He discovers that alien ducks from the planet Siron has invaded his kingdom and stolen the treasure of life to terraform their world. 
+        <p>Habeeb must now use his newly found abilities to retrieve and redeem his honour, before total annihilation hits Arthuris!</p>
+ 
+      </div>
+    </div>
+    
+  </body>
+</html>
