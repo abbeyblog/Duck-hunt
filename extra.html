@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>credit</title>
+    <style type="text/css" media="all">
+      
+body{
+background-image: url(menu.jpeg);
+background-color: black;
+background-size: 100%;
+background-repeat: no-repeat;
+ position: flex;
+ animation: example 5s infinite;
+ animation-name:example;
+ animation-duration: 10s
+}
+
+@keyframes example {
+ 0%{background-image: url(menu.jpeg);}
+  50%{background-image: url(menu2.jpeg);}
+    100%{background-image:url(menu3.jpeg);}
+}
+      
+#scroll-container {
+  height: 100%;
+}
+
+#scroll-text {
+  height: 600px;
+  text-align: center;
+  color: white;
+  
+  /* animation properties */
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -webkit-animation: my-animation 2s linear infinite;
+  animation: my-animation 30s linear infinite;
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+  p{
+    margin-bottom: 50px;
+  }    
+  a{
+    font-size: 30px;
+    text-decoration: none;
+  }    
+  
+    </style>
+  </head>
+  <body>
+    <a href="menu.html">⏪</a>
+    <div id="scroll-container">
+      <div id="scroll-text">
+        <h2>CREW</h2>
+       <p>ABIODUN J. OJO <br />Lead Programmer</p>
+       <p>ABDULKAREEM HABEEB<br />Associate Programmer </p>
+       <p>ABIODUN OLUWAFEMI <br />Animation</p>
+       <p>DEJI OLALERE <br />Software Manager</p>
+       <p>GOLD OLALERE <br />Graphics Designer</p>
+       <p>BLESSING OYESIJI <br />Prayer Support</p>
+       <p>ODUNAYO OJO <br />Story Writer</p>
+       <p>MUMMY HABEEB <br />Financial Support</p>
+       <p>ERUOBAMI INT'L <br />Music Director</p>
+       <p>GOLDEN SAGE <br/>Audio Manager</p>
+       <p>TAIWO & KEHINDE OJO <br />Production Managers</p>
+   <h2>DEVELOPER</h2>    
+ <p>Phenomenal Games Inc. <br />
+ Kwara State Polytechnic, <br />
+ Ilorin. <br />
+ ©2022 <br />
+ 08086792440</p>
+ 
+      </div>
+    </div>
+    
+  </body>
+</html>
